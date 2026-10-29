@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "files": 110,
+    "allRawBlobSha256Match": true,
+    "allGitModesMatch": true
+  },
+  "candidate": {
+    "files": 111,
+    "allRawBlobSha256Match": true,
+    "allGitModesMatch": true
+  },
+  "baseline-regression": {
+    "files": 111,
+    "allRawBlobSha256Match": true,
+    "allGitModesMatch": true
+  },
+  "format-baseline": {
+    "files": 110,
+    "allRawBlobSha256Match": true,
+    "allGitModesMatch": true
+  },
+  "format-candidate": {
+    "files": 111,
+    "allRawBlobSha256Match": true,
+    "allGitModesMatch": true
+  }
+}

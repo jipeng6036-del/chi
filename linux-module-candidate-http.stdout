@@ -1,0 +1,30 @@
+=== RUN   TestNoCachePreservesRequestPreconditionHeaders
+--- PASS: TestNoCachePreservesRequestPreconditionHeaders (0.00s)
+=== RUN   TestNoCacheConditionalRequests
+=== RUN   TestNoCacheConditionalRequests/unconditional
+=== RUN   TestNoCacheConditionalRequests/stale_etag
+=== RUN   TestNoCacheConditionalRequests/current_etag
+=== RUN   TestNoCacheConditionalRequests/cached_etag
+=== RUN   TestNoCacheConditionalRequests/modified_since
+=== RUN   TestNoCacheConditionalRequests/unmodified_since
+=== RUN   TestNoCacheConditionalRequests/current_range
+=== RUN   TestNoCacheConditionalRequests/stale_range
+--- PASS: TestNoCacheConditionalRequests (0.01s)
+    --- PASS: TestNoCacheConditionalRequests/unconditional (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/stale_etag (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/current_etag (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/cached_etag (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/modified_since (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/unmodified_since (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/current_range (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/stale_range (0.00s)
+=== RUN   TestNoCacheConditionalUpdates
+=== RUN   TestNoCacheConditionalUpdates/stale_update
+=== RUN   TestNoCacheConditionalUpdates/create_existing_resource
+=== RUN   TestNoCacheConditionalUpdates/current_update
+--- PASS: TestNoCacheConditionalUpdates (0.00s)
+    --- PASS: TestNoCacheConditionalUpdates/stale_update (0.00s)
+    --- PASS: TestNoCacheConditionalUpdates/create_existing_resource (0.00s)
+    --- PASS: TestNoCacheConditionalUpdates/current_update (0.00s)
+PASS
+ok  	nocache-consumer	0.010s

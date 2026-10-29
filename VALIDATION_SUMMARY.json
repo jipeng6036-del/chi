@@ -1,0 +1,171 @@
+{
+  "baseline": "9f8adb1aabaa8a91180a821111d3f8e668d1c0bf",
+  "candidate": "110c345fa782031fe6d0836527c069dceea78243",
+  "localSourceChecks": {
+    "baseline": {
+      "files": 110,
+      "allRawBlobSha256Match": true,
+      "allGitModesMatch": true
+    },
+    "candidate": {
+      "files": 111,
+      "allRawBlobSha256Match": true,
+      "allGitModesMatch": true
+    },
+    "baseline-regression": {
+      "files": 111,
+      "allRawBlobSha256Match": true,
+      "allGitModesMatch": true
+    },
+    "format-baseline": {
+      "files": 110,
+      "allRawBlobSha256Match": true,
+      "allGitModesMatch": true
+    },
+    "format-candidate": {
+      "files": 111,
+      "allRawBlobSha256Match": true,
+      "allGitModesMatch": true
+    }
+  },
+  "suiteResults": [
+    {
+      "name": "linux127-baseline-make-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux127-candidate-make-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux126-baseline-make-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux126-candidate-make-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux125-baseline-make-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux125-candidate-make-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux124-baseline-make-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "linux124-candidate-make-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "windows127-baseline-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "windows127-candidate-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "windows126-baseline-test",
+      "topLevelPass": 139,
+      "subtestPass": 251,
+      "fails": 0,
+      "skips": 0
+    },
+    {
+      "name": "windows126-candidate-test",
+      "topLevelPass": 142,
+      "subtestPass": 262,
+      "fails": 0,
+      "skips": 0
+    }
+  ],
+  "linuxVersions": {
+    "127": "go version go1.27.3 linux/amd64",
+    "126": "go version go1.26.10 linux/amd64",
+    "125": "go version go1.25.14 linux/amd64",
+    "124": "go version go1.24.13 linux/amd64"
+  },
+  "windowsVersions": {
+    "127": "go version go1.27.3 windows/amd64",
+    "126": "go version go1.26.10 windows/amd64"
+  },
+  "linuxCommands": "go get -d -t ./...; make test (go clean -testcache, go test -race -v ., go test -race -v ./middleware); go vet ./...; go build ./...",
+  "windowsCommands": "go get -d -t ./...; go test -count=1 -v ./...; go vet ./...; go build ./...",
+  "realHttpRegression": {
+    "subcases": 11,
+    "baselineFailingSubcases": 7,
+    "baselinePassingControlSubcases": 4,
+    "candidatePassingSubcases": 11,
+    "baseOnlyWithCandidateTests": true,
+    "platforms": [
+      "Windows",
+      "Linux"
+    ],
+    "allFourLinuxVersionsHaveNegativeControl": true
+  },
+  "installedModuleProof": {
+    "localFileGoproxy": true,
+    "noReplaceDirective": true,
+    "separateModuleCaches": true,
+    "baselineAndCandidateZipExactGitSources": true,
+    "allInstalledModuleFileBytesVerified": true,
+    "linuxAndWindowsRealHttp": true,
+    "notPublicRegistryPublication": true,
+    "GOSUMDBoffScope": "Local file fixture only; installed binary explicitly chosen"
+  },
+  "goimports": {
+    "version": "v0.38.0",
+    "reason": "Repository specifies goimports without a version; pinned v0.38.0 before validation and kept it unchanged",
+    "buildinfo": "goimports-buildinfo.stdout",
+    "changedFilesDiffEmpty": true,
+    "wholeTreeActualWriteCommand": "/go/bin/goimports -w .",
+    "wholeTreeBaselineAndCandidateZeroChangedBytes": true,
+    "qualificationCopiesOnly": true
+  },
+  "diagnosticOnlyFailure": {
+    "command": "go run golang.org/x/tools/cmd/goimports@v0.38.0 -h",
+    "nativeToolExit": 2,
+    "goRunExit": 1,
+    "reason": "Help/usage flag was an invalid version probe; all required test runs had already passed; actual version verified with go version -m after installing same v0.38.0, and actual whole-tree write entry passed unchanged",
+    "log": "goimports-version.stderr"
+  },
+  "notRunLocally": [
+    "Windows race/make and Windows Go1.24/1.25, no local gcc/make; original 8-job fork CI is required before upstream PR"
+  ],
+  "scope": "No push, fork, upstream PR, review comment, merge, release, CLA signing, or force push by this worker"
+}

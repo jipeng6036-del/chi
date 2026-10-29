@@ -1,0 +1,17 @@
+/go/bin/goimports: go1.27.3
+	path	golang.org/x/tools/cmd/goimports
+	mod	golang.org/x/tools	v0.38.0	h1:Hx2Xv8hISq8Lm16jvBZ2VQf+RLmbd7wVUsALibYI/IQ=
+	dep	golang.org/x/mod	v0.29.0	h1:HV8lRxZC4l2cr3Zq1LvtOsi/ThTgWnUk/y64QSs8GwA=
+	dep	golang.org/x/sync	v0.17.0	h1:l60nONMj9l5drqw6jlhIELNv9I0A4OFgRsG9k2oT9Ug=
+	dep	golang.org/x/telemetry	v0.0.0-20251008203120-078029d740a8	h1:LvzTn0GQhWuvKH/kVRS3R3bVAsdQWI7hvfLHGgh9+lU=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	DefaultGODEBUG=containermaxprocs=0,cryptocustomrand=1,decoratemappings=0,httpservecontentmaxranges=1,tlssecpmlkem=0,tlssha1=1,tracebacklabels=0,updatemaxprocs=0,urlstrictcolons=0,x509sha256skid=0,x509sslcertoverrideplatform=0
+	build	CGO_ENABLED=1
+	build	CGO_CFLAGS=
+	build	CGO_CPPFLAGS=
+	build	CGO_CXXFLAGS=
+	build	CGO_LDFLAGS=
+	build	GOARCH=amd64
+	build	GOOS=linux
+	build	GOAMD64=v1

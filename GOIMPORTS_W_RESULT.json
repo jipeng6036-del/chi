@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "sourceRevision": "9f8adb1aabaa8a91180a821111d3f8e668d1c0bf",
+    "goimportsVersion": "v0.38.0",
+    "fileCount": 110,
+    "changedFiles": [],
+    "addedFiles": [],
+    "diffNativeExit": 0
+  },
+  "candidate": {
+    "sourceRevision": "110c345fa782031fe6d0836527c069dceea78243",
+    "goimportsVersion": "v0.38.0",
+    "fileCount": 111,
+    "changedFiles": [],
+    "addedFiles": [],
+    "diffNativeExit": 0
+  }
+}

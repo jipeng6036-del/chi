@@ -1,0 +1,10 @@
+{
+  "Path": "github.com/go-chi/chi/v5",
+  "Version": "v5.0.0-candidate",
+  "Info": "/work/installed-module-candidate/cache/download/github.com/go-chi/chi/v5/@v/v5.0.0-candidate.info",
+  "GoMod": "/work/installed-module-candidate/cache/download/github.com/go-chi/chi/v5/@v/v5.0.0-candidate.mod",
+  "Zip": "/work/installed-module-candidate/cache/download/github.com/go-chi/chi/v5/@v/v5.0.0-candidate.zip",
+  "Dir": "/work/installed-module-candidate/github.com/go-chi/chi/v5@v5.0.0-candidate",
+  "Sum": "h1:BPOKhkoKHHcU5sn2TK7ZtpadiMX8clOAT7lJEPCJUeA=",
+  "GoModSum": "h1:d1IG7GtKPSjPyBP365PH8sAGVHk3qfB/IhjFNRH1wWM="
+}

@@ -1,0 +1,10 @@
+{
+  "Path": "github.com/go-chi/chi/v5",
+  "Version": "v5.0.0-baseline",
+  "Time": "2026-10-29T23:24:19Z",
+  "Dir": "/work/installed-module-baseline/github.com/go-chi/chi/v5@v5.0.0-baseline",
+  "GoMod": "/work/installed-module-baseline/cache/download/github.com/go-chi/chi/v5/@v/v5.0.0-baseline.mod",
+  "GoVersion": "1.24",
+  "Sum": "h1:eu2BRtBfS+vtv62HkKTzjfdel+GEyFWg40Gy5ZIMdYs=",
+  "GoModSum": "h1:d1IG7GtKPSjPyBP365PH8sAGVHk3qfB/IhjFNRH1wWM="
+}

@@ -1,0 +1,41 @@
+=== RUN   TestNoCachePreservesRequestPreconditionHeaders
+    nocache_test.go:23: If-Match header = "", want "\"current\""
+--- FAIL: TestNoCachePreservesRequestPreconditionHeaders (0.00s)
+=== RUN   TestNoCacheConditionalRequests
+=== RUN   TestNoCacheConditionalRequests/unconditional
+=== RUN   TestNoCacheConditionalRequests/stale_etag
+    nocache_test.go:90: response = 200 "document", want 412 ""
+=== RUN   TestNoCacheConditionalRequests/current_etag
+=== RUN   TestNoCacheConditionalRequests/cached_etag
+    nocache_test.go:90: response = 200 "document", want 304 ""
+=== RUN   TestNoCacheConditionalRequests/modified_since
+    nocache_test.go:90: response = 200 "document", want 304 ""
+=== RUN   TestNoCacheConditionalRequests/unmodified_since
+    nocache_test.go:90: response = 200 "document", want 412 ""
+=== RUN   TestNoCacheConditionalRequests/current_range
+=== RUN   TestNoCacheConditionalRequests/stale_range
+    nocache_test.go:90: response = 206 "doc", want 200 "document"
+--- FAIL: TestNoCacheConditionalRequests (0.02s)
+    --- PASS: TestNoCacheConditionalRequests/unconditional (0.01s)
+    --- FAIL: TestNoCacheConditionalRequests/stale_etag (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/current_etag (0.00s)
+    --- FAIL: TestNoCacheConditionalRequests/cached_etag (0.00s)
+    --- FAIL: TestNoCacheConditionalRequests/modified_since (0.00s)
+    --- FAIL: TestNoCacheConditionalRequests/unmodified_since (0.00s)
+    --- PASS: TestNoCacheConditionalRequests/current_range (0.00s)
+    --- FAIL: TestNoCacheConditionalRequests/stale_range (0.00s)
+=== RUN   TestNoCacheConditionalUpdates
+=== RUN   TestNoCacheConditionalUpdates/stale_update
+    nocache_test.go:159: status = 204, want 412
+    nocache_test.go:164: stored value = "updated", want "original"
+=== RUN   TestNoCacheConditionalUpdates/create_existing_resource
+    nocache_test.go:159: status = 204, want 412
+    nocache_test.go:164: stored value = "updated", want "original"
+=== RUN   TestNoCacheConditionalUpdates/current_update
+--- FAIL: TestNoCacheConditionalUpdates (0.00s)
+    --- FAIL: TestNoCacheConditionalUpdates/stale_update (0.00s)
+    --- FAIL: TestNoCacheConditionalUpdates/create_existing_resource (0.00s)
+    --- PASS: TestNoCacheConditionalUpdates/current_update (0.00s)
+FAIL
+FAIL	github.com/go-chi/chi/v5/middleware	0.031s
+FAIL

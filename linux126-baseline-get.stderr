@@ -1,0 +1,1 @@
+go: -d flag is deprecated. -d=true is a no-op

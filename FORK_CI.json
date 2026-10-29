@@ -1,0 +1,112 @@
+{
+  "atUtc": "2026-10-29T23:44:11.645304+00:00",
+  "run": "https://github.com/jipeng6036-del/chi/actions/runs/40974581830",
+  "head": "110c345fa782031fe6d0836527c069dceea78243",
+  "status": "SUCCESS",
+  "expectedJobs": 8,
+  "completedSuccessJobs": 8,
+  "matrix": "Go1.24.x/1.25.x/1.26.x/1.27.x x Ubuntu/Windows",
+  "rawLogBytes": 285038,
+  "rawLogArchiveSha256": "bee52568eeb6ae36df49eb4c713f58aef1d2dbdbfeed0b256397569291b6ae95",
+  "workflowUnchanged": true,
+  "workflowGitBlob": "625c66154ecb1a918f718fe13e218ada43c79d5b",
+  "jobs": [
+    {
+      "log": "0_test (1.24.x, windows-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.24.13 windows/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "1_test (1.26.x, windows-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.26.10 windows/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "2_test (1.25.x, ubuntu-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.25.14 linux/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "3_test (1.25.x, windows-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.25.14 windows/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "4_test (1.27.x, windows-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.27.3 windows/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "5_test (1.26.x, ubuntu-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.26.10 linux/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "6_test (1.27.x, ubuntu-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.27.3 linux/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    },
+    {
+      "log": "7_test (1.24.x, ubuntu-latest).txt",
+      "topLevelPassEvents": 142,
+      "subtestPassEvents": 262,
+      "failureEvents": 0,
+      "skipEvents": 0,
+      "actualGoVersions": [
+        "go version go1.24.13 linux/amd64"
+      ],
+      "makeTestInvoked": true,
+      "realHttpRegressionPresent": true
+    }
+  ],
+  "upstreamPRCI": "Not triggered yet; no PR yet"
+}
