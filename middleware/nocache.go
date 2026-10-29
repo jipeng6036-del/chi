@@ -21,6 +21,7 @@ var noCacheHeaders = map[string]string{
 
 // NoCache is a simple piece of middleware that sets a number of HTTP headers to prevent
 // a router (or subrouter) from being cached by an upstream proxy and/or client.
+// Request preconditions, such as If-Match, are left intact for the handler to evaluate.
 //
 // As per http://wiki.nginx.org/HttpProxyModule - NoCache sets:
 //
